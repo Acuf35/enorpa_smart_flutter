@@ -1,5 +1,7 @@
 
 
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class DegerGiris3X0 extends StatefulWidget {
@@ -63,7 +65,8 @@ class _DegerGiris3X0State extends State<DegerGiris3X0> {
     try {
       final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
-    oran = MediaQuery.of(context).textScaleFactor;
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    oran = sqrt(carpim/300441.0);
     } catch (Exception) {
       print("Hata VAR!!!");
     }

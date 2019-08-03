@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:enorpa_smart/genel/database_helper.dart';
 import 'package:enorpa_smart/genel/deger_giris_3x0.dart';
 import 'package:enorpa_smart/genel/deger_giris_2x1.dart';
@@ -109,7 +111,8 @@ class KontrolState extends State<Kontrol> {
     try {
       final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
-    oran = MediaQuery.of(context).textScaleFactor;
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    oran = sqrt(carpim/300441.0);
 
     }catch(Exception){
       print("Hata VAR!!!");

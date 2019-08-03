@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 import 'package:enorpa_smart/kontrol/ayarlar.dart';
 import 'package:enorpa_smart/kontrol/kontrol.dart';
 import 'package:flutter/material.dart';
@@ -124,7 +125,8 @@ class AnaSayfaYapi extends State<AnaSayfa> with TickerProviderStateMixin{
 
     final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
-    var oran = MediaQuery.of(context).textScaleFactor;
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    var oran = sqrt(carpim/300441.0);
 
 
     SystemChrome.setEnabledSystemUIOverlays([]);

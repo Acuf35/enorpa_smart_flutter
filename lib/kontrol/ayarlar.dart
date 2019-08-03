@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:enorpa_smart/genel/database_helper.dart';
 import 'package:enorpa_smart/genel_ayarlar.dart';
 import 'package:enorpa_smart/kontrol/alarm_online.dart';
@@ -81,7 +83,8 @@ class AyarlarState extends State<Ayarlar> {
 
     final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
-    var oran = MediaQuery.of(context).textScaleFactor;
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    var oran = sqrt(carpim/300441.0);
 
     //region SCAFFOLD
 

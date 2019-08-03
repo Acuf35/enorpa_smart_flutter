@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:enorpa_smart/genel/database_helper.dart';
 import 'package:enorpa_smart/kontrol/baslangic_baglanti_ayarlari.dart';
 import 'package:enorpa_smart/languages/select.dart';
@@ -45,7 +47,8 @@ class SocialMediaState extends State<SocialMedia> {
 
     final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
-    var oran = MediaQuery.of(context).textScaleFactor;
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    var oran = sqrt(carpim/300441.0);
 
     return Scaffold(
       body: Container(

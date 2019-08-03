@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import 'package:enorpa_smart/enorpa/com/webpage.dart';
@@ -7,8 +9,9 @@ class SeraIsitmaSistemleri extends StatelessWidget {
   Widget build(BuildContext context) {
     final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
-    var oran = MediaQuery.of(context).textScaleFactor;
-
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    var oran = sqrt(carpim/300441.0);
+    
     return Scaffold(
       body: Container(
         color: Color.fromRGBO(218, 99, 56, 1.0),

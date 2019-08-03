@@ -74,6 +74,7 @@ class BaslangicSektorAyarlariState extends State<BaslangicSektorAyarlari> {
     final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
     var oran = MediaQuery.of(context).textScaleFactor;
+    
 
     //region SCAFFOLD
 
@@ -111,7 +112,7 @@ class BaslangicSektorAyarlariState extends State<BaslangicSektorAyarlari> {
 
                     Container(
                       alignment: Alignment.centerLeft,
-                      margin: EdgeInsets.only(left: 80*oran,top: 5*oran,bottom: 5*oran),
+                      margin: EdgeInsets.only(left: 20*oran,top: 5*oran,bottom: 5*oran),
 
                       child: RaisedButton(
                         padding: EdgeInsets.only(right: 20*oran,left: 20*oran,top: 5*oran,bottom: 5*oran),

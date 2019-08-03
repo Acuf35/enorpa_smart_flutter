@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:enorpa_smart/genel/database_helper.dart';
 import 'package:enorpa_smart/genel/deger_giris_tarih.dart';
 import 'package:enorpa_smart/genel/deger_giris_verituru.dart';
@@ -94,7 +96,8 @@ class VeriState extends State<Veri> {
     try {
       final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
-    oran = MediaQuery.of(context).textScaleFactor;
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    oran = sqrt(carpim/300441.0);
     } catch (Exception) {
       print("Hata VAR!!!");
     }

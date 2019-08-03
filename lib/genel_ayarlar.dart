@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:enorpa_smart/enorpa/com/products.dart';
 import 'package:enorpa_smart/enorpa/com/social_media.dart';
@@ -46,8 +47,14 @@ class GenelAyarlarState extends State<GenelAyarlar> {
     });
 
     final pixelRatio = MediaQuery.of(context).devicePixelRatio;
-    final realResolution = MediaQuery.of(context).size;
-    var oran = MediaQuery.of(context).textScaleFactor;
+    final realResolution = MediaQuery.of(context).size.width;
+    //var oran = MediaQuery.of(context).textScaleFactor;
+    var scalef = MediaQuery.of(context).textScaleFactor;
+    var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    var oran = sqrt(carpim/300441.0);
+    print("Oran değeri : $oran");
+    print("Size değeri : $carpim");
+    print("scale değeri : $scalef");
 
 
     //region SCAFFOLD
