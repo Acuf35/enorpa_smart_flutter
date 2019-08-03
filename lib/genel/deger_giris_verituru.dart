@@ -45,12 +45,9 @@ class VeriTuruState extends State<VeriTuru> {
     var oran;
 
     try {
-      var width = MediaQuery.of(context).size.width *
-          MediaQuery.of(context).devicePixelRatio;
-      var height = MediaQuery.of(context).size.height *
-          MediaQuery.of(context).devicePixelRatio;
-      var carpim = width * height;
-      oran = carpim / 2073600.0;
+      final pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    final realResolution = MediaQuery.of(context).size;
+    oran = MediaQuery.of(context).textScaleFactor;
     } catch (Exception) {
       print("Hata VAR!!!");
     }

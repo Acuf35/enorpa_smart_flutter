@@ -106,12 +106,9 @@ class BaslangicBaglantiAyarlariState extends State<BaslangicBaglantiAyarlari> {
     var txt5_3 = new TextEditingController(text: plcIP_3);
     var txt5_4 = new TextEditingController(text: plcIP_4);
 
-    var width = MediaQuery.of(context).size.width *
-        MediaQuery.of(context).devicePixelRatio;
-    var height = MediaQuery.of(context).size.height *
-        MediaQuery.of(context).devicePixelRatio;
-    var carpim = width * height;
-    var oran = carpim / 2073600.0;
+    final pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    final realResolution = MediaQuery.of(context).size;
+    var oran = MediaQuery.of(context).textScaleFactor;
 
     //region SCAFFOLD
 
@@ -151,7 +148,7 @@ class BaslangicBaglantiAyarlariState extends State<BaslangicBaglantiAyarlari> {
 
                 Container(
                   margin:
-                      EdgeInsets.only(top: 5*oran, bottom: 0, left: 80*oran, right: 80*oran),
+                      EdgeInsets.only(top: 5*oran, bottom: 0, left: 120*oran, right: 120*oran),
                   alignment: Alignment.center,
                   color: Color.fromRGBO(216, 27, 96, 1.0),
                   height: 2,

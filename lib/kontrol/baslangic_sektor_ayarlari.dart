@@ -71,12 +71,9 @@ class BaslangicSektorAyarlariState extends State<BaslangicSektorAyarlari> {
 
 
 
-    var width = MediaQuery.of(context).size.width *
-        MediaQuery.of(context).devicePixelRatio;
-    var height = MediaQuery.of(context).size.height *
-        MediaQuery.of(context).devicePixelRatio;
-    var carpim = width * height;
-    var oran = carpim / 2073600.0;
+    final pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    final realResolution = MediaQuery.of(context).size;
+    var oran = MediaQuery.of(context).textScaleFactor;
 
     //region SCAFFOLD
 
@@ -113,8 +110,8 @@ class BaslangicSektorAyarlariState extends State<BaslangicSektorAyarlari> {
                     ),
 
                     Container(
-                      alignment: Alignment.centerRight,
-                      margin: EdgeInsets.only(right: 80*oran,top: 5*oran,bottom: 5*oran),
+                      alignment: Alignment.centerLeft,
+                      margin: EdgeInsets.only(left: 80*oran,top: 5*oran,bottom: 5*oran),
 
                       child: RaisedButton(
                         padding: EdgeInsets.only(right: 20*oran,left: 20*oran,top: 5*oran,bottom: 5*oran),
@@ -143,7 +140,7 @@ class BaslangicSektorAyarlariState extends State<BaslangicSektorAyarlari> {
 
                 Container(
                   margin:
-                      EdgeInsets.only(top: 4*oran, bottom: 0, left: 80*oran, right: 80*oran),
+                      EdgeInsets.only(top: 4*oran, bottom: 4*oran, left: 100*oran, right: 100*oran),
                   alignment: Alignment.center,
                   color: Color.fromRGBO(216, 27, 96, 1.0),
                   height: 2,

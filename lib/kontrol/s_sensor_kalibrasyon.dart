@@ -57,22 +57,9 @@ class  SsensorKalibrasyonState extends State< SsensorKalibrasyon> {
     var oran;
 
     try {
-      var width = MediaQuery
-          .of(context)
-          .size
-          .width *
-          MediaQuery
-              .of(context)
-              .devicePixelRatio;
-      var height = MediaQuery
-          .of(context)
-          .size
-          .height *
-          MediaQuery
-              .of(context)
-              .devicePixelRatio;
-      var carpim = width * height;
-      oran = carpim / 2073600.0;
+      final pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    final realResolution = MediaQuery.of(context).size;
+    oran = MediaQuery.of(context).textScaleFactor;
 
     }catch(Exception){
       print("Hata VAR!!!");
@@ -145,7 +132,7 @@ class  SsensorKalibrasyonState extends State< SsensorKalibrasyon> {
 
                 Container(
                   margin:
-                  EdgeInsets.only(top: 0, bottom: 0, left: 80*oran, right: 80*oran),
+                  EdgeInsets.only(top: 0, bottom: 0, left: 120*oran, right: 120*oran),
                   alignment: Alignment.center,
                   color: Color.fromRGBO(216, 27, 96, 1.0),
                   height: 2,

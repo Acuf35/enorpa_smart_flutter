@@ -9,6 +9,7 @@ import 'package:enorpa_smart/kontrol/baslangic_baglanti_ayarlari.dart';
 import 'package:enorpa_smart/languages/select.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GenelAyarlar extends StatefulWidget {
   
@@ -44,23 +45,10 @@ class GenelAyarlarState extends State<GenelAyarlar> {
       }
     });
 
+    final pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    final realResolution = MediaQuery.of(context).size;
+    var oran = MediaQuery.of(context).textScaleFactor;
 
-    var width = MediaQuery
-        .of(context)
-        .size
-        .width *
-        MediaQuery
-            .of(context)
-            .devicePixelRatio;
-    var height = MediaQuery
-        .of(context)
-        .size
-        .height *
-        MediaQuery
-            .of(context)
-            .devicePixelRatio;
-    var carpim = width * height;
-    var oran = carpim / 2073600.0;
 
     //region SCAFFOLD
 
@@ -109,7 +97,7 @@ class GenelAyarlarState extends State<GenelAyarlar> {
                 style: TextStyle(
                   color: Colors.grey.shade100,
                   fontFamily: 'Audio wide',
-                  fontSize: 20 * oran,
+                  fontSize: oran*20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
