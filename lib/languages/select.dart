@@ -132,6 +132,8 @@ class SelectLanguage{
     kod=="tv109" ? metin='İLETİŞİM' : null;
     kod=="tv110" ? metin='KEŞFET & KONTROL ET' : null;
     kod=="tv111" ? metin='Uygulamadan çıkmak istiyor musunuz?' : null;
+    kod=="tv112" ? metin='Set\nSıc' : null;
+    kod=="tv113" ? metin='Do.\nBöl.' : null;
 
     //#endregion
 
@@ -142,12 +144,12 @@ class SelectLanguage{
     kod=="btn3" ? metin='TAMAMLA' : null;
     kod=="btn4" ? metin='KAZAN AKTİF' : null;
     kod=="btn5" ? metin='KAZAN POMPASI' : null;
-    kod=="btn6" ? metin='K. ŞÖNT POMPASI' : null;
+    kod=="btn6" ? metin='K. ŞÖNT POMP.' : null;
     kod=="btn7" ? metin='3 YOLLU VANA' : null;
     kod=="btn8" ? metin='KAZAN 1' : null;
     kod=="btn9" ? metin='KAZAN 2' : null;
     kod=="btn10" ? metin='3 Y. VANA' : null;
-    kod=="btn11" ? metin='S. POMPA' : null;
+    kod=="btn11" ? metin='S.POMPA' : null;
     kod=="btn12" ? metin='KALİB.' : null;
     kod=="btn13" ? metin='VERİ' : null;
     kod=="btn14" ? metin='İZLEME' : null;
@@ -334,6 +336,8 @@ class SelectLanguage{
     kod=="tv109" ? metin='CONTACT' : null;
     kod=="tv110" ? metin='EXPLORE & CONTROL' : null;
     kod=="tv111" ? metin='Do you want to exit from the app?' : null;
+    kod=="tv112" ? metin='Set\nTem' : null;
+    kod=="tv113" ? metin='Na.\nZon.' : null;
     
 
     //endregion

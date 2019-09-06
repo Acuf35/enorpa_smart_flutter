@@ -52,12 +52,16 @@ class  ManuelState extends State< Manuel> {
     });
 
     var oran;
+    var oran_en;
 
     try {
       final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
     var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    var x=MediaQuery.of(context).size.width;
+    var y=MediaQuery.of(context).size.height;
     oran = sqrt(carpim/300441.0);
+    oran_en = (x-568) <= 0 ? 0.5 : ((x-568)>=800 ? 1.0 : (0.5+(x/1600)));
 
     }catch(Exception){
       print("Hata VAR!!!");
@@ -176,7 +180,7 @@ class  ManuelState extends State< Manuel> {
 
                             Expanded(
                               child: Container(
-                                margin: EdgeInsets.only(right: k2_aktif=="1" ? 10 : 180*oran,left: k2_aktif=="1" ? 0 : 180*oran),
+                                margin: EdgeInsets.only(right: k2_aktif=="1" ? 10 : 160*oran,left: k2_aktif=="1" ? 0 : 160*oran),
                                 child: Row(
                                   children: <Widget>[
 
@@ -697,8 +701,8 @@ class  ManuelState extends State< Manuel> {
 
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.only(left: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran : (sektorSayisi==2 ? 200*oran : (sektorSayisi==1 ? 280*oran : 280*oran))) ,
-                              right: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran : (sektorSayisi==2 ? 200*oran : (sektorSayisi==1 ? 280*oran : 280*oran)))),
+                          padding: EdgeInsets.only(left: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran_en : (sektorSayisi==2 ? 200*oran_en : (sektorSayisi==1 ? 280*oran_en : 280*oran_en))) ,
+                              right: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran_en : (sektorSayisi==2 ? 200*oran_en : (sektorSayisi==1 ? 280*oran_en : 280*oran_en)))),
                           child: Row(
                             children: <Widget>[
 

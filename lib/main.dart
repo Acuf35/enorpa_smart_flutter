@@ -10,7 +10,9 @@ import 'languages/select.dart';
 
 
 void main() {
+  //await SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
 
+  _landscapeModeOnly();
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "ENORPA SMART",
@@ -129,13 +131,14 @@ class AnaSayfaYapi extends State<AnaSayfa> with TickerProviderStateMixin{
     var oran = sqrt(carpim/300441.0);
 
 
-    SystemChrome.setEnabledSystemUIOverlays([]);
+    //SystemChrome.setEnabledSystemUIOverlays([]);
+    
     //SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
 
 
 
     // TODO: implement build
-    _landscapeModeOnly();
+    //_landscapeModeOnly();
 
 
     return Scaffold(

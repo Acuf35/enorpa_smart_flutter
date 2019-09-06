@@ -239,13 +239,13 @@ class  SsensorKalibrasyonState extends State< SsensorKalibrasyon> {
                                     Padding(
                                       padding: EdgeInsets.only(right: 10*oran),
                                       child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv35'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 16),textAlign: TextAlign.center,),
+                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 14),textAlign: TextAlign.center,),
                                     ),
                                     Text("80.0",textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 35),),
+                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
                                     Padding(
                                       padding: EdgeInsets.only(left: 5*oran),
-                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 18),),
+                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 14),),
                                     )
                                   ],
                                 ),
@@ -377,13 +377,13 @@ class  SsensorKalibrasyonState extends State< SsensorKalibrasyon> {
                                     Padding(
                                       padding: EdgeInsets.only(right: 10*oran),
                                       child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv37'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 16),textAlign: TextAlign.center,),
+                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 14),textAlign: TextAlign.center,),
                                     ),
                                     Text("80.0",textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 35),),
+                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
                                     Padding(
                                       padding: EdgeInsets.only(left: 5*oran),
-                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 18),),
+                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 14),),
                                     )
                                   ],
                                 ),
@@ -531,13 +531,13 @@ class  SsensorKalibrasyonState extends State< SsensorKalibrasyon> {
                                     Padding(
                                       padding: EdgeInsets.only(right: 10*oran),
                                       child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv36'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 16),textAlign: TextAlign.center,),
+                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 14),textAlign: TextAlign.center,),
                                     ),
                                     Text("80.0",textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 35),),
+                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
                                     Padding(
                                       padding: EdgeInsets.only(left: 5*oran),
-                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 18),),
+                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 14),),
                                     )
                                   ],
                                 ),
@@ -671,13 +671,13 @@ class  SsensorKalibrasyonState extends State< SsensorKalibrasyon> {
                                     Padding(
                                       padding: EdgeInsets.only(right: 10*oran),
                                       child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv34'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 16),textAlign: TextAlign.center,),
+                                      ,color: Colors.deepOrange.shade800,fontWeight: FontWeight.bold,fontSize: 14),textAlign: TextAlign.center,),
                                     ),
                                     Text("80.0",textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab'
-                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 35),),
+                                    ,color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
                                     Padding(
                                       padding: EdgeInsets.only(left: 5*oran),
-                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 18),),
+                                      child: Text("°C",textScaleFactor: oran,style: TextStyle(fontSize: 14),),
                                     )
                                   ],
                                 ),

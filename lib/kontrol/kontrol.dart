@@ -107,12 +107,16 @@ class KontrolState extends State<Kontrol> {
     });
 
     var oran;
+    var oran_en;
 
     try {
       final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
     var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
+    var x=MediaQuery.of(context).size.width;
+    var y=MediaQuery.of(context).size.height;
     oran = sqrt(carpim/300441.0);
+    oran_en = (x-568) <= 0 ? 0.5 : ((x-568)>=800 ? 1.0 : (0.5+(x/1600)));
 
     }catch(Exception){
       print("Hata VAR!!!");
@@ -716,8 +720,8 @@ class KontrolState extends State<Kontrol> {
 
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.only(left: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran : (sektorSayisi==2 ? 200*oran : (sektorSayisi==1 ? 280*oran : 280*oran))) ,
-                              right: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran : (sektorSayisi==2 ? 200*oran : (sektorSayisi==1 ? 280*oran : 280*oran)))),
+                          padding: EdgeInsets.only(left: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran_en : (sektorSayisi==2 ? 200*oran_en : (sektorSayisi==1 ? 280*oran_en : 280*oran_en))) ,
+                              right: sektorSayisi==4 ? 0 : (sektorSayisi==3 ? 120*oran_en : (sektorSayisi==2 ? 200*oran_en : (sektorSayisi==1 ? 280*oran_en : 280*oran_en)))),
                           child: Row(
                             children: <Widget>[
 

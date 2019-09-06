@@ -112,6 +112,10 @@ class BaslangicBaglantiAyarlariState extends State<BaslangicBaglantiAyarlari> {
     final realResolution = MediaQuery.of(context).size;
     var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
     var oran = sqrt(carpim/300441.0);
+    var x=MediaQuery.of(context).size.width;
+    var y=MediaQuery.of(context).size.height;
+    print(x);
+    print(y);
 
     //region SCAFFOLD
 

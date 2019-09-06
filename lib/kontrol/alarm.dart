@@ -209,182 +209,199 @@ class AlarmState extends State<Alarm> {
                                             mainAxisAlignment:
                                             MainAxisAlignment.spaceEvenly,
                                             children: <Widget>[
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_kazanAktifPasifEnabledButton(k1_aktif,aktif_kazan,1),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                      MaterialTapTargetSize
-                                                          .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
-                                                      onPressed: () {
-                                                        if(k1_aktif=="1"){
-                                                          aktif_kazan=1;
-                                                        }
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_kazanAktifPasifEnabledButton(k1_aktif,aktif_kazan,1),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                        MaterialTapTargetSize
+                                                            .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
+                                                        onPressed: () {
+                                                          if(k1_aktif=="1"){
+                                                            aktif_kazan=1;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                       SelectLanguage().selectStrings(dilSecimi, 'tv32'),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                            'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                            FontWeight.bold,
-                                                            color:
-                                                            Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_kazanAktifPasifEnabledButton(k2_aktif,aktif_kazan,2),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                      MaterialTapTargetSize
-                                                          .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
-                                                      onPressed: () {
-                                                        if(k2_aktif=="1"){
-                                                          aktif_kazan=2;
-                                                        }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                         SelectLanguage().selectStrings(dilSecimi, 'tv32'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                              'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                              FontWeight.bold,
+                                                              color:
+                                                              Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_kazanAktifPasifEnabledButton(k2_aktif,aktif_kazan,2),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                        MaterialTapTargetSize
+                                                            .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
+                                                        onPressed: () {
+                                                          if(k2_aktif=="1"){
+                                                            aktif_kazan=2;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        SelectLanguage().selectStrings(dilSecimi, 'tv33'),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                            'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                            FontWeight.bold,
-                                                            color:
-                                                            Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_sektorAktifPasifEnabledButton(s1_aktif,aktif_sektor,1),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                      MaterialTapTargetSize
-                                                          .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
-                                                      onPressed: () {
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'tv33'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                              'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                              FontWeight.bold,
+                                                              color:
+                                                              Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_sektorAktifPasifEnabledButton(s1_aktif,aktif_sektor,1),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                        MaterialTapTargetSize
+                                                            .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
+                                                        onPressed: () {
 
-                                                        if(s1_aktif=="1"){
-                                                          aktif_sektor=1;
-                                                        }
+                                                          if(s1_aktif=="1"){
+                                                            aktif_sektor=1;
+                                                          }
 
-                                                        setState(() {});
+                                                          setState(() {});
 
-                                                      },
-                                                      child: Text(
-                                                        SelectLanguage().selectStrings(dilSecimi, 'tv8'),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                            'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                            FontWeight.bold,
-                                                            color:
-                                                            Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_sektorAktifPasifEnabledButton(s2_aktif,aktif_sektor,2),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                      MaterialTapTargetSize
-                                                          .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
-                                                      onPressed: () {
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'tv8'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                              'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                              FontWeight.bold,
+                                                              color:
+                                                              Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_sektorAktifPasifEnabledButton(s2_aktif,aktif_sektor,2),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                        MaterialTapTargetSize
+                                                            .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
+                                                        onPressed: () {
 
-                                                        if(s2_aktif=="1"){
-                                                          aktif_sektor=2;
-                                                        }
+                                                          if(s2_aktif=="1"){
+                                                            aktif_sektor=2;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        SelectLanguage().selectStrings(dilSecimi, 'tv9'),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                            'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                            FontWeight.bold,
-                                                            color:
-                                                            Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_sektorAktifPasifEnabledButton(s3_aktif,aktif_sektor,3),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                      MaterialTapTargetSize
-                                                          .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
-                                                      onPressed: () {
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'tv9'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                              'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                              FontWeight.bold,
+                                                              color:
+                                                              Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_sektorAktifPasifEnabledButton(s3_aktif,aktif_sektor,3),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                        MaterialTapTargetSize
+                                                            .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
+                                                        onPressed: () {
 
-                                                        if(s3_aktif=="1"){
-                                                          aktif_sektor=3;
-                                                        }
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        SelectLanguage().selectStrings(dilSecimi, 'tv10'),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                            'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                            FontWeight.bold,
-                                                            color:
-                                                            Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5, right: 5),
-                                                  decoration:_sektorAktifPasifEnabledButton(s4_aktif,aktif_sektor,4),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                      MaterialTapTargetSize
-                                                          .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
-                                                      onPressed: () {
-                                                        if(s4_aktif=="1"){
-                                                          aktif_sektor=4;
-                                                        }
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                       SelectLanguage().selectStrings(dilSecimi, 'tv11'),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                            'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                            FontWeight.bold,
-                                                            color:
-                                                            Colors.white),
-                                                      ))),
+                                                          if(s3_aktif=="1"){
+                                                            aktif_sektor=3;
+                                                          }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'tv10'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                              'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                              FontWeight.bold,
+                                                              color:
+                                                              Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5, right: 5),
+                                                    decoration:_sektorAktifPasifEnabledButton(s4_aktif,aktif_sektor,4),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                        MaterialTapTargetSize
+                                                            .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,right: 5*oran, left: 5*oran),
+                                                        onPressed: () {
+                                                          if(s4_aktif=="1"){
+                                                            aktif_sektor=4;
+                                                          }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                         SelectLanguage().selectStrings(dilSecimi, 'tv11'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                              'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                              FontWeight.bold,
+                                                              color:
+                                                              Colors.white),
+                                                        ))),
+                                              ),
                                             ],
                                           ),
 
@@ -400,12 +417,12 @@ class AlarmState extends State<Alarm> {
                                                     Row(
                                                       children: <Widget>[
 
-                                                        Expanded(flex: 2,
+                                                        Expanded(flex: 5,
                                                             child: Container(alignment: Alignment.center, margin: EdgeInsets.only(top: 10*oran),
                                                                 child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv62'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold,color: Colors.deepOrange.shade800),))
                                                         ),
 
-                                                        Expanded(flex: 1,
+                                                        Expanded(flex: 3,
                                                             child: Container(alignment: Alignment.center,  margin: EdgeInsets.only(top: 10*oran),
                                                                 child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv63'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold,color: Colors.deepOrange.shade800),))
                                                         ),
@@ -417,12 +434,12 @@ class AlarmState extends State<Alarm> {
                                                       child: Row(
                                                         children: <Widget>[
 
-                                                          Expanded(flex: 2,
+                                                          Expanded(flex: 5,
                                                               child: Container(alignment: Alignment.center, margin: EdgeInsets.only(top: 10),
                                                                   child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv64'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold),))
                                                           ),
 
-                                                          Expanded(flex:1,
+                                                          Expanded(flex:3,
                                                               child: Container(
                                                                   decoration: const BoxDecoration(
                                                                       gradient: LinearGradient(
@@ -450,7 +467,7 @@ class AlarmState extends State<Alarm> {
 
 
 
-                                                                      }, child: Text(kazan_yuk_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 23,
+                                                                      }, child: Text(kazan_yuk_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 20,
                                                                       fontWeight: FontWeight.bold,
                                                                       color: Colors.white),))
                                                               )
@@ -459,17 +476,17 @@ class AlarmState extends State<Alarm> {
                                                         ],
                                                       ),
                                                     ),
-
+                                                    SizedBox( height: 2*oran,),
                                                     Expanded(
                                                       child: Row(
                                                         children: <Widget>[
 
-                                                          Expanded(flex: 2,
+                                                          Expanded(flex: 5,
                                                               child: Container(alignment: Alignment.center, margin: EdgeInsets.only(top: 10*oran),
                                                                   child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv65'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold),))
                                                           ),
 
-                                                          Expanded(flex:1,
+                                                          Expanded(flex:3,
                                                               child: Container(
                                                                   decoration: const BoxDecoration(
                                                                       gradient: LinearGradient(
@@ -493,7 +510,7 @@ class AlarmState extends State<Alarm> {
                                                                         _degerNo=2;
 
                                                                         _degergiris2X1();
-                                                                      }, child: Text(kazan_dus_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 23,
+                                                                      }, child: Text(kazan_dus_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 20,
                                                                       fontWeight: FontWeight.bold,
                                                                       color: Colors.white),))
                                                               )
@@ -502,17 +519,17 @@ class AlarmState extends State<Alarm> {
                                                         ],
                                                       ),
                                                     ),
-
+                                                    SizedBox( height: 2*oran,),
                                                     Expanded(
                                                       child: Row(
                                                         children: <Widget>[
 
-                                                          Expanded(flex: 2,
+                                                          Expanded(flex: 5,
                                                               child: Container(alignment: Alignment.center, margin: EdgeInsets.only(top: 10*oran),
                                                                   child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv66'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold),))
                                                           ),
 
-                                                          Expanded(flex:1,
+                                                          Expanded(flex:3,
                                                               child: Container(
                                                                   decoration: const BoxDecoration(
                                                                       gradient: LinearGradient(
@@ -536,7 +553,7 @@ class AlarmState extends State<Alarm> {
                                                                         _degerNo=3;
 
                                                                         _degergiris2X1();
-                                                                      }, child: Text(sek_yuk_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 23,
+                                                                      }, child: Text(sek_yuk_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 20,
                                                                       fontWeight: FontWeight.bold,
                                                                       color: Colors.white),))
                                                               )
@@ -545,17 +562,17 @@ class AlarmState extends State<Alarm> {
                                                         ],
                                                       ),
                                                     ),
-
+                                                    SizedBox( height: 2*oran,),
                                                     Expanded(
                                                       child: Row(
                                                         children: <Widget>[
 
-                                                          Expanded(flex: 2,
+                                                          Expanded(flex: 5,
                                                               child: Container(alignment: Alignment.center, margin: EdgeInsets.only(top: 10*oran),
                                                                   child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv67'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold),))
                                                           ),
 
-                                                          Expanded(flex:1,
+                                                          Expanded(flex:3,
                                                               child: Container(
                                                                   decoration: const BoxDecoration(
                                                                       gradient: LinearGradient(
@@ -579,7 +596,7 @@ class AlarmState extends State<Alarm> {
                                                                         _degerNo=4;
 
                                                                         _degergiris2X1();
-                                                                      }, child: Text(sek_dus_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 23,
+                                                                      }, child: Text(sek_dus_sic,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 20,
                                                                       fontWeight: FontWeight.bold,
                                                                       color: Colors.white),))
                                                               )
@@ -588,17 +605,17 @@ class AlarmState extends State<Alarm> {
                                                         ],
                                                       ),
                                                     ),
-
+                                                    SizedBox( height: 2*oran,),
                                                     Expanded(
                                                       child: Row(
                                                         children: <Widget>[
 
-                                                          Expanded(flex: 2,
+                                                          Expanded(flex: 5,
                                                               child: Container(alignment: Alignment.center, margin: EdgeInsets.only(top: 10*oran),
                                                                   child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv68'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold),))
                                                           ),
 
-                                                          Expanded(flex:1,
+                                                          Expanded(flex:3,
                                                               child: Container(
                                                                   decoration: const BoxDecoration(
                                                                       gradient: LinearGradient(
@@ -622,7 +639,7 @@ class AlarmState extends State<Alarm> {
                                                                         _degerNo=5;
 
                                                                         _degergiris2X1();
-                                                                      }, child: Text(sek_yuk_nem,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 23,
+                                                                      }, child: Text(sek_yuk_nem,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 20,
                                                                       fontWeight: FontWeight.bold,
                                                                       color: Colors.white),))
                                                               )
@@ -631,17 +648,17 @@ class AlarmState extends State<Alarm> {
                                                         ],
                                                       ),
                                                     ),
-
+                                                    SizedBox( height: 2*oran,),
                                                     Expanded(
                                                       child: Row(
                                                         children: <Widget>[
 
-                                                          Expanded(flex: 2,
+                                                          Expanded(flex: 5,
                                                               child: Container(alignment: Alignment.center, margin: EdgeInsets.only(top: 10*oran),
                                                                   child: Text(SelectLanguage().selectStrings(dilSecimi, 'tv69'),textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 14,fontWeight: FontWeight.bold),))
                                                           ),
 
-                                                          Expanded(flex:1,
+                                                          Expanded(flex:3,
                                                               child: Container(
                                                                   decoration: const BoxDecoration(
                                                                       gradient: LinearGradient(
@@ -665,7 +682,7 @@ class AlarmState extends State<Alarm> {
                                                                         _degerNo=6;
 
                                                                         _degergiris2X1();
-                                                                      }, child: Text(sek_dus_nem,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 23,
+                                                                      }, child: Text(sek_dus_nem,textScaleFactor: oran,style: TextStyle(fontFamily: 'Kelly Slab',fontSize: 20,
                                                                       fontWeight: FontWeight.bold,
                                                                       color: Colors.white),))
                                                               )
@@ -674,7 +691,7 @@ class AlarmState extends State<Alarm> {
                                                         ],
                                                       ),
                                                     ),
-
+                                                    SizedBox( height: 2*oran,),
 
                                                   ],
                                                 ),
@@ -1262,13 +1279,7 @@ class AlarmState extends State<Alarm> {
                           ],
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.only(
-                            top: 0, bottom: 0, left: 40*oran, right: 40*oran),
-                        alignment: Alignment.center,
-                        color: Color.fromRGBO(216, 27, 96, 1.0),
-                        height: 2,
-                      ),
+                      
                     ],
                   ),
                 )

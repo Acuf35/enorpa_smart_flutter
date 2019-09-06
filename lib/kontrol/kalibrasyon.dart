@@ -537,9 +537,9 @@ class KalibrasyonState extends State<Kalibrasyon> {
                                                                       .shrinkWrap,
                                                               padding: EdgeInsets
                                                                   .only(
-                                                                      top: 15,
+                                                                      top: 15*oran,
                                                                       bottom:
-                                                                          15),
+                                                                          15*oran),
                                                               onPressed: () {
                                                                 Navigator.push(
                                                                     context,

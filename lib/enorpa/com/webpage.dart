@@ -1,4 +1,5 @@
 
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -11,6 +12,9 @@ class Webpage extends StatelessWidget{
   Webpage(String url){
     link=url;
   }
+
+  final Completer<WebViewController> _controller = Completer<WebViewController>();
+  
   
   
   @override
@@ -20,7 +24,7 @@ final pixelRatio = MediaQuery.of(context).devicePixelRatio;
     final realResolution = MediaQuery.of(context).size;
     var carpim = MediaQuery.of(context).size.width*MediaQuery.of(context).size.height;
     var oran = sqrt(carpim/300441.0);
-
+    print("Linkkk : $link");
 
     return Scaffold(
       body: Container(
@@ -35,43 +39,22 @@ final pixelRatio = MediaQuery.of(context).devicePixelRatio;
                 begin: FractionalOffset.topCenter,
                 end: FractionalOffset.bottomCenter),
           ),
-          child: Container(
-
-            child: Stack(
-
-
-              children: <Widget>[
-
-                WebView(
-
-                  //initialUrl: 'http://www.enorpa.com',
-                  initialUrl: link,
+          
+          
+          child: WebView(
                   javascriptMode: JavascriptMode.unrestricted,
+                  onWebViewCreated: (WebViewController webViewController){
+                    _controller.complete(webViewController);
+                  },
+
+                  //initialUrl: "https://www.google.com",
+                  //initialUrl: "http://www.enorpa.com",
+                  initialUrl: link,
+                  
+                  
+                  
 
                 ),
-
-
-                /*
-            Row(
-
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-
-                Text("DENEME" , style: TextStyle(fontSize: 24,color: Colors.white,fontFamily: 'Audio Wide',fontWeight: FontWeight.bold,backgroundColor: Colors.blue),)
-
-              ],
-
-            )
-            */
-
-
-              ],
-
-
-            ),
-
-            padding: EdgeInsets.only(top: 5*oran),
-          ),
 
 
 

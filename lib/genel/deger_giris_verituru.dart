@@ -130,72 +130,77 @@ class VeriTuruState extends State<VeriTuru> {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceEvenly,
                                             children: <Widget>[
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:
-                                                      _kazanAktifPasifEnabledButton(
-                                                          k1_aktif,
-                                                          aktif_kazan,
-                                                          1),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
-                                                      onPressed: () {
-                                                        if (k1_aktif == "1") {
-                                                          aktif_kazan = 1;
-                                                        }
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:
+                                                        _kazanAktifPasifEnabledButton(
+                                                            k1_aktif,
+                                                            aktif_kazan,
+                                                            1),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
+                                                        onPressed: () {
+                                                          if (k1_aktif == "1") {
+                                                            aktif_kazan = 1;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "KAZAN 1",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:
-                                                      _kazanAktifPasifEnabledButton(
-                                                          k2_aktif,
-                                                          aktif_kazan,
-                                                          2),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
-                                                      onPressed: () {
-                                                        if (k2_aktif == "1") {
-                                                          aktif_kazan = 2;
-                                                        }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'btn8'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 20,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:
+                                                        _kazanAktifPasifEnabledButton(
+                                                            k2_aktif,
+                                                            aktif_kazan,
+                                                            2),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
+                                                        onPressed: () {
+                                                          if (k2_aktif == "1") {
+                                                            aktif_kazan = 2;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "KAZAN 2",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'btn9'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 20,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
                                             ],
                                           ),
                                           Expanded(
@@ -327,136 +332,147 @@ class VeriTuruState extends State<VeriTuru> {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceEvenly,
                                             children: <Widget>[
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:
-                                                      _sektorAktifPasifEnabledButton(
-                                                          s1_aktif,
-                                                          aktif_sektor,
-                                                          1),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
-                                                      onPressed: () {
-                                                        if (s1_aktif == "1") {
-                                                          aktif_sektor = 1;
-                                                        }
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:
+                                                        _sektorAktifPasifEnabledButton(
+                                                            s1_aktif,
+                                                            aktif_sektor,
+                                                            1),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
+                                                        onPressed: () {
+                                                          if (s1_aktif == "1") {
+                                                            aktif_sektor = 1;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 1",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:
-                                                      _sektorAktifPasifEnabledButton(
-                                                          s2_aktif,
-                                                          aktif_sektor,
-                                                          2),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
-                                                      onPressed: () {
-                                                        if (s2_aktif == "1") {
-                                                          aktif_sektor = 2;
-                                                        }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          "SEKTÖR 1",
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 20,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:
+                                                        _sektorAktifPasifEnabledButton(
+                                                            s2_aktif,
+                                                            aktif_sektor,
+                                                            2),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
+                                                        onPressed: () {
+                                                          if (s2_aktif == "1") {
+                                                            aktif_sektor = 2;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 2",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:
-                                                      _sektorAktifPasifEnabledButton(
-                                                          s3_aktif,
-                                                          aktif_sektor,
-                                                          3),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
-                                                      onPressed: () {
-                                                        if (s3_aktif == "1") {
-                                                          aktif_sektor = 3;
-                                                        }
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 3",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:
-                                                      _sektorAktifPasifEnabledButton(
-                                                          s4_aktif,
-                                                          aktif_sektor,
-                                                          4),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
-                                                      onPressed: () {
-                                                        if (s4_aktif == "1") {
-                                                          aktif_sektor = 4;
-                                                        }
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 4",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          "SEKTÖR 2",
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 20,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:
+                                                        _sektorAktifPasifEnabledButton(
+                                                            s3_aktif,
+                                                            aktif_sektor,
+                                                            3),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
+                                                        onPressed: () {
+                                                          if (s3_aktif == "1") {
+                                                            aktif_sektor = 3;
+                                                          }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          "SEKTÖR 3",
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 20,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:
+                                                        _sektorAktifPasifEnabledButton(
+                                                            s4_aktif,
+                                                            aktif_sektor,
+                                                            4),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran, left:7*oran,right:7*oran),
+                                                        onPressed: () {
+                                                          if (s4_aktif == "1") {
+                                                            aktif_sektor = 4;
+                                                          }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          "SEKTÖR 4",
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 20,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
                                             ],
                                           ),
                                           Expanded(

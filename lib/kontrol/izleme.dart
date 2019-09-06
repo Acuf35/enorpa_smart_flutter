@@ -164,64 +164,69 @@ class IzlemeState extends State<Izleme> {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceEvenly,
                                             children: <Widget>[
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_kazanAktifPasifEnabledButton(k1_aktif,aktif_kazan,1),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
-                                                      onPressed: () {
-                                                        if(k1_aktif=="1"){
-                                                          aktif_kazan=1;
-                                                        }
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_kazanAktifPasifEnabledButton(k1_aktif,aktif_kazan,1),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
+                                                        onPressed: () {
+                                                          if(k1_aktif=="1"){
+                                                            aktif_kazan=1;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "KAZAN 1",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5, right: 5),
-                                                  decoration:_kazanAktifPasifEnabledButton(k2_aktif,aktif_kazan,2),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
-                                                      onPressed: () {
-                                                        if(k2_aktif=="1"){
-                                                          aktif_kazan=2;
-                                                        }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, "btn8"),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5, right: 5),
+                                                    decoration:_kazanAktifPasifEnabledButton(k2_aktif,aktif_kazan,2),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
+                                                        onPressed: () {
+                                                          if(k2_aktif=="1"){
+                                                            aktif_kazan=2;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "KAZAN 2",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, "btn9"),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
                                             ],
                                           ),
                                           Expanded(
@@ -395,81 +400,93 @@ class IzlemeState extends State<Izleme> {
                                                         MainAxisAlignment
                                                             .center,
                                                     children: <Widget>[
-                                                      Text(
-                                                        SelectLanguage()
-                                                            .selectStrings(
-                                                                dilSecimi,
-                                                                "tv56"),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontFamily:
-                                                                'Kelly Slab'),
-                                                        textAlign:
-                                                            TextAlign.center,
-                                                      ),
-                                                      Padding(
-                                                          padding:
-                                                              EdgeInsets.only(
-                                                                  left: 10*oran),
-                                                          child: Text(
-                                                            "80,0",
-                                                            textScaleFactor: oran,style: TextStyle(
-                                                              fontSize: 18,
-                                                              fontFamily:
-                                                                  'Kelly Slab',
+                                                      Expanded(flex: 4,
+                                                                                                              child: Text(
+                                                          SelectLanguage()
+                                                              .selectStrings(
+                                                                  dilSecimi,
+                                                                  "tv56"),
+                                                          textScaleFactor: oran,style: TextStyle(fontSize: 12,
                                                               fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                              color:
-                                                                  Colors.white,
-                                                            ),
-                                                          )),
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsets
-                                                                    .only(
-                                                                right: 10*oran),
-                                                        child: Text(
+                                                                  FontWeight.bold,
+                                                              fontFamily:
+                                                                  'Kelly Slab'),
+                                                          textAlign:
+                                                              TextAlign.center,
+                                                        ),
+                                                      ),
+                                                      Expanded(flex: 5,
+                                                                                                              child: Padding(
+                                                            padding:
+                                                                EdgeInsets.only(
+                                                                    left: 10*oran),
+                                                            child: Text(
+                                                              "80,0",
+                                                              textScaleFactor: oran,style: TextStyle(
+                                                                fontSize: 18,
+                                                                fontFamily:
+                                                                    'Kelly Slab',
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                color:
+                                                                    Colors.white,
+                                                              ),
+                                                            )),
+                                                      ),
+                                                      Expanded(flex: 2,
+                                                                                                              child: Padding(
+                                                          padding:
+                                                              EdgeInsets
+                                                                      .only(
+                                                                  right: 0*oran),
+                                                          child: Text(
+                                                            "°C",
+                                                            textScaleFactor: oran,style: TextStyle(
+                                                                fontSize: 14),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Expanded(flex: 4,
+                                                                                                              child: Text(
+                                                          SelectLanguage()
+                                                              .selectStrings(
+                                                                  dilSecimi,
+                                                                  "tv57"),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              fontFamily:
+                                                                  'Kelly Slab',fontSize: 12,),
+                                                          textAlign:
+                                                              TextAlign.center,
+                                                        ),
+                                                      ),
+                                                      Expanded(flex: 5,
+                                                                                                              child: Padding(
+                                                            padding:
+                                                                EdgeInsets.only(
+                                                                    left: 10*oran),
+                                                            child: Text(
+                                                              "80,0",
+                                                              textScaleFactor: oran,style: TextStyle(
+                                                                fontSize: 18,
+                                                                fontFamily:
+                                                                    'Kelly Slab',
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                color:
+                                                                    Colors.white,
+                                                              ),
+                                                            )),
+                                                      ),
+                                                      Expanded(flex: 2,
+                                                                                                              child: Text(
                                                           "°C",
                                                           textScaleFactor: oran,style: TextStyle(
                                                               fontSize: 14),
                                                         ),
-                                                      ),
-                                                      Text(
-                                                        SelectLanguage()
-                                                            .selectStrings(
-                                                                dilSecimi,
-                                                                "tv57"),
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontFamily:
-                                                                'Kelly Slab'),
-                                                        textAlign:
-                                                            TextAlign.center,
-                                                      ),
-                                                      Padding(
-                                                          padding:
-                                                              EdgeInsets.only(
-                                                                  left: 10*oran),
-                                                          child: Text(
-                                                            "80,0",
-                                                            textScaleFactor: oran,style: TextStyle(
-                                                              fontSize: 18,
-                                                              fontFamily:
-                                                                  'Kelly Slab',
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                              color:
-                                                                  Colors.white,
-                                                            ),
-                                                          )),
-                                                      Text(
-                                                        "°C",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontSize: 14),
                                                       ),
                                                     ],
                                                   ),
@@ -549,124 +566,135 @@ class IzlemeState extends State<Izleme> {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceEvenly,
                                             children: <Widget>[
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_sektorAktifPasifEnabledButton(s1_aktif,aktif_sektor,1),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
-                                                      onPressed: () {
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_sektorAktifPasifEnabledButton(s1_aktif,aktif_sektor,1),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
+                                                        onPressed: () {
 
-                                                        if(s1_aktif=="1"){
-                                                          aktif_sektor=1;
-                                                        }
+                                                          if(s1_aktif=="1"){
+                                                            aktif_sektor=1;
+                                                          }
 
-                                                        setState(() {});
+                                                          setState(() {});
 
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 1",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_sektorAktifPasifEnabledButton(s2_aktif,aktif_sektor,2),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
-                                                      onPressed: () {
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'btn20'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_sektorAktifPasifEnabledButton(s2_aktif,aktif_sektor,2),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
+                                                        onPressed: () {
 
-                                                        if(s2_aktif=="1"){
-                                                          aktif_sektor=2;
-                                                        }
+                                                          if(s2_aktif=="1"){
+                                                            aktif_sektor=2;
+                                                          }
 
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 2",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5*oran, right: 5*oran),
-                                                  decoration:_sektorAktifPasifEnabledButton(s3_aktif,aktif_sektor,3),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
-                                                      onPressed: () {
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'btn21'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5*oran, right: 5*oran),
+                                                    decoration:_sektorAktifPasifEnabledButton(s3_aktif,aktif_sektor,3),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
+                                                        onPressed: () {
 
-                                                        if(s3_aktif=="1"){
-                                                          aktif_sektor=3;
-                                                        }
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 3",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
-                                              Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 5, right: 5),
-                                                  decoration:_sektorAktifPasifEnabledButton(s4_aktif,aktif_sektor,4),
-                                                  //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                                  child: FlatButton(
-                                                      materialTapTargetSize:
-                                                          MaterialTapTargetSize
-                                                              .shrinkWrap,
-                                                      padding: EdgeInsets.only(
-                                                          top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
-                                                      onPressed: () {
-                                                        if(s4_aktif=="1"){
-                                                          aktif_sektor=4;
-                                                        }
-                                                        setState(() {});
-                                                      },
-                                                      child: Text(
-                                                        "SEKTÖR 4",
-                                                        textScaleFactor: oran,style: TextStyle(
-                                                            fontFamily:
-                                                                'Kelly Slab',
-                                                            fontSize: 20,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            color:
-                                                                Colors.white),
-                                                      ))),
+                                                          if(s3_aktif=="1"){
+                                                            aktif_sektor=3;
+                                                          }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'btn22'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
+                                              SizedBox(width: 2*oran,),
+                                              Expanded(
+                                                                                              child: Container(
+                                                    padding: EdgeInsets.only(
+                                                        left: 5, right: 5),
+                                                    decoration:_sektorAktifPasifEnabledButton(s4_aktif,aktif_sektor,4),
+                                                    //padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                                    child: FlatButton(
+                                                        materialTapTargetSize:
+                                                            MaterialTapTargetSize
+                                                                .shrinkWrap,
+                                                        padding: EdgeInsets.only(
+                                                            top: 7*oran, bottom: 7*oran,left: 5*oran,right: 5*oran),
+                                                        onPressed: () {
+                                                          if(s4_aktif=="1"){
+                                                            aktif_sektor=4;
+                                                          }
+                                                          setState(() {});
+                                                        },
+                                                        child: Text(
+                                                          SelectLanguage().selectStrings(dilSecimi, 'btn23'),
+                                                          textScaleFactor: oran,style: TextStyle(
+                                                              fontFamily:
+                                                                  'Kelly Slab',
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight.bold,
+                                                              color:
+                                                                  Colors.white),
+                                                        ))),
+                                              ),
                                             ],
                                           ),
                                           Expanded(
@@ -1193,13 +1221,7 @@ class IzlemeState extends State<Izleme> {
                           ],
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.only(
-                            top: 0, bottom: 0, left: 40*oran, right: 40*oran),
-                        alignment: Alignment.center,
-                        color: Color.fromRGBO(216, 27, 96, 1.0),
-                        height: 2,
-                      ),
+                      
                     ],
                   ),
                 )
